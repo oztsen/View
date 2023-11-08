@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Edit View</h2>
+  <form (ngSubmit)="save()">
+    <div class="form-group">
+      <label for="viewName">View Name:</label>
+      <input type="text" class="form-control" id="viewName" [(ngModel)]="view.viewName" name="viewName" required>
+    </div>
+    <div class="form-group">
+      <label for="databaseName">Database Name:</label>
+      <input type="text" class="form-control" id="databaseName" [(ngModel)]="view.databaseName" name="databaseName">
+    </div>
+    <div class="form-group">
+      <label for="userName">User Name:</label>
+      <input type="text" class="form-control" id="userName" [(ngModel)]="view.userName" name="userName">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a [routerLink]="['/views']">Cancel</a>
+  </form>
+</div>

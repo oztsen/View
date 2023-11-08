@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>View List</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>View Name</th>
+        <th>Database Name</th>
+        <th>User Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let view of views">
+        <td>{{ view.id }}</td>
+        <td>{{ view.viewName }}</td>
+        <td>{{ view.databaseName }}</td>
+        <td>{{ view.userName }}</td>
+        <td>
+          <a [routerLink]="['/views', view.id]">Details</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>View Detail</h2>
+  <dl>
+    <dt>ID:</dt>
+    <dd>{{ view.id }}</dd>
+    <dt>View Name:</dt>
+    <dd>{{ view.viewName }}</dd>
+    <dt>Database Name:</dt>
+    <dd>{{ view.databaseName }}</dd>
+    <dt>User Name:</dt>
+    <dd>{{ view.userName }}</dd>
+  </dl>
+  <a [routerLink]="['/views']">Back to List</a>
+</div>
